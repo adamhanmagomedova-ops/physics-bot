@@ -5,7 +5,8 @@ from aiogram.filters import Command
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 
 # Вставьте сюда ваш токен от @BotFather
-BOT_TOKEN = "9105965987:AAEJ6EzT964_fA6HzU-HfJLlX8gGZrK5_9c"
+import os
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 # Включаем логирование, чтобы видеть ошибки в консоли
 logging.basicConfig(level=logging.INFO)
