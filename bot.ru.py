@@ -2,10 +2,10 @@ import socket
 import sys
 
 try:
-_lock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-_lock.bind(("127.0.0.1", 47291))
+    _lock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    _lock.bind(("127.0.0.1", 47291))
 except OSError:
-sys.exit(0)
+    sys.exit(0)
 import asyncio
 import logging
 from aiogram import Bot, Dispatcher, types, F
